@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+backtrader = "*"
+alpaca-trade-api = "*"
+exchange-calendars = "*"
+matplotlib = "*"
+msgpack = "*"
+numpy = "*"
+pandas = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+requests-mock = "*"
+coverage = "*"
+mock = "*"
+
+
+[requires]
+python_version = "3.11"
