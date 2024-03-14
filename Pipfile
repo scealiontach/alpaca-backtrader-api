@@ -19,6 +19,5 @@ requests-mock = "*"
 coverage = "*"
 mock = "*"
 
-
 [requires]
 python_version = "3.11"

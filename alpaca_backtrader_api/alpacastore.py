@@ -445,7 +445,7 @@ class AlpacaStore(with_metaclass(MetaSingleton, object)):
               not dtend.tzname() else dtend
         if granularity == Granularity.Minute:
             calendar = exchange_calendars.get_calendar(name='NYSE')
-            while not calendar.is_open_on_minute(dtend.ceil(freq='T')):
+            while not calendar.is_open_on_minute(dtend.ceil(freq='min')):
                 dtend = dtend.replace(hour=15,
                                       minute=59,
                                       second=0,
